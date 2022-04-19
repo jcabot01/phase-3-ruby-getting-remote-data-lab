@@ -3,8 +3,8 @@ require 'net/http'
 require 'json'
 
 class GetRequester
-  def initialize(url)
-    @url = url
+  def initialize(url) #GetRequester.new(passed-in url)
+    @url = url  #we save the passed in url to a @url variable that we can reference later 
   end
   
   def get_response_body   #GET method
